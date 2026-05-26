@@ -49,7 +49,7 @@ async def scrape_assignments(email=None, password=None, portal_url=None):
                 view_buttons = await page.query_selector_all(".btn-view-course")
                 await view_buttons[i].click()
                 await page.wait_for_load_state("networkidle")
-                print(f"Course {course_names[i]} loaded successfully")
+                print(f"Course {course_namss[i]} loaded successfully")
                 
                 await page.click("text=ASSIGNMENT")                                 # Opening "Assignments" Tab of the course
                 await page.wait_for_load_state("networkidle")

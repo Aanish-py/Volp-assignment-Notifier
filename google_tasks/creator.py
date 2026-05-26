@@ -25,7 +25,7 @@ def create_task(service, assignment):
     }
 
     result = service.tasks().insert(tasklist="@default", body=task).execute()
-    print(f"✅ Created: {result['title']}")
+    print(f" Created: {result['title']}")
 
 
 def create_all_tasks(service, assignments):
